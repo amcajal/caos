@@ -23,6 +23,13 @@
 # You should have received a copy of the GNU General Public License
 # along with CAOS.  If not, see <http://www.gnu.org/licenses/>.
 
+""" Module programming_language.py
+
+Class that represents a "programming language": name, syntax, special cases 
+to be considered and so on. An object of this class contains the information 
+required  to process a certain source code in the proper language. 
+
+"""
 
 
 import sys

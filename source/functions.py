@@ -20,6 +20,12 @@
 # You should have received a copy of the GNU General Public License
 # along with CAOS.  If not, see <http://www.gnu.org/licenses/>.
 
+"""Module functions.py
+
+Code of core functionality: text processing, file checking, results writing 
+and so on.
+
+"""
 
 
 import sys 

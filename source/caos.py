@@ -21,7 +21,12 @@
 # You should have received a copy of the GNU General Public License
 # along with CAOS.  If not, see <http://www.gnu.org/licenses/>.
 
+"""Module caos.py
 
+Main function (entry point) of CAOS application. It contains the argparse module
+to check the input parameters and launch the analysis process. 
+
+"""
 
 import sys 
 sys.dont_write_bytecode = True    # Avoid write '.pyc' files.
