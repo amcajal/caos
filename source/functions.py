@@ -20,12 +20,6 @@
 # You should have received a copy of the GNU General Public License
 # along with CAOS.  If not, see <http://www.gnu.org/licenses/>.
 
-"""Module functions.py
-
-Code of core functionality: text processing, file checking, results writing 
-and so on.
-
-"""
 
 
 import sys 
@@ -139,7 +133,7 @@ def code_searching(input_file, language, operation, comments):
     @param  operation:  target operation to be searched.
     @param  comments:   flag to either ignore or include source code comments 
                         in the analysis process.    
-    @return             data to be printed in the results file, composed by the 
+    @return:            data to be printed in the results file, composed by the 
                         found occurrences in the analyzed code.
     
     """

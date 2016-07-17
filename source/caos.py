@@ -104,7 +104,7 @@ def main(argv):
                 + ' to be analyzed.')
         
     parser.add_argument(
-            '-t',  '--target', default = [], metavar = '<target>', nargs = '+', 
+            '-t',  '--target', default = [], metavar = '<target>', nargs = '+',
             help = 'Target element(s) to be analyzed. A target element can be' 
                 + ' a single source code file or a directory.')
         

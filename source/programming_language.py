@@ -61,7 +61,7 @@ class ProgrammingLanguage:
                                 (e.g: for Java ['//.*', '/\*.*?\*/']; that is, 
                                 all text that comes after a double slash and 
                                 all text between /* and */).                            
-        @param  division_char:  list of characters used to perform divisions 
+        @param  division_list:  list of characters used to perform divisions 
                                 -or related operations- in the language
                                 (e.g: for Java, [/, %]).                        
         @param  float_list:     list of keywords and regular expressions, used
