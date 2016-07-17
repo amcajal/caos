@@ -1,0 +1,77 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+caos__analysis__17_07_2016_20_58_21
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+---------------------------------------------------------------------------
+DIVISION BY ZERO ANALYSIS
+---------------------------------------------------------------------------
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@ FILE: C:/Users/Alberto/Desktop/Temporales/caos_test/examples/VectorOps.java
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+>>> Line 43: if (v[i]%2==0) suma ++;
+
+>>> Line 52: for(int j=2; j<=v[i]/2; j++){
+
+>>> Line 53: if (v[i]%j==0)
+
+
+
+---------------------------------------------------------------------------
+FLOATING POINT ANALYSIS
+---------------------------------------------------------------------------
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@ FILE: C:/Users/Alberto/Desktop/Temporales/caos_test/examples/VectorOps.java
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+>>> Line 14: for (int i=0;i<=n-1;i++){
+
+>>> Line 15: j = (int)(Math.random()*100+1);
+
+>>> Line 23: for (int i=0; i<N; i++){
+
+>>> Line 29: for (int i=0; i<N; i++)
+
+>>> Line 30: System.out.print(v[i]+" ");
+
+>>> Line 35: for (int i=0; i<=N-1; i++)
+
+>>> Line 42: for (int i=0; i<N; i++)
+
+>>> Line 43: if (v[i]%2==0) suma ++;
+
+>>> Line 49: for(int i=0; i<N; i++){
+
+>>> Line 50: if ((v[i] == 1) || (v[i]==2)) {numPrimos ++; continue;}
+
+>>> Line 52: for(int j=2; j<=v[i]/2; j++){
+
+>>> Line 53: if (v[i]%j==0)
+
+>>> Line 57: if (primo) {numPrimos++;}
+
+>>> Line 63: for (int i=0; i<N-1; i++)
+
+>>> Line 64: for (int j=N-1; j>i; j--)
+
+>>> Line 65: if (v[j-1]>=v[j]){
+
+>>> Line 66: temp=v[j-1];
+
+>>> Line 67: v[j-1]=v[j];
+
+>>> Line 74: for (int i=0; i<N-1; i++)
+
+>>> Line 75: for (int j=N-1; j>i; j--)
+
+>>> Line 76: if (v[j-1]<=v[j]){
+
+>>> Line 77: temp=v[j-1];
+
+>>> Line 78: v[j-1]=v[j];
+
+
+
