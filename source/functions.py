@@ -20,6 +20,13 @@
 # You should have received a copy of the GNU General Public License
 # along with CAOS.  If not, see <http://www.gnu.org/licenses/>.
 
+"""Module functions.py
+
+Code of core functionality: text processing,
+file checking, results writing and so on.
+
+"""
+
 
 
 import sys 
@@ -148,7 +155,7 @@ def code_searching(input_file, language, operation, comments):
         # TO DO
         # This is going to produce a huge output, because the matching conditions 
         # are many, so a lot of lines will match it, but as false positives. 
-        # In further implementations of Pycriks, "Float searching" shall match 
+        # In further implementations of CAOS, "Float searching" shall match 
         # the lines that actually uses float variables (that is, lines with 
         # variables declared in the language as properly Float or Double types)
 
@@ -175,8 +182,15 @@ def code_searching(input_file, language, operation, comments):
     # If comments are not allowed, delete then from the extracted content
     # (all types: single-line, multi-line, in-line, docstring).
     if comments == False: 
+        # Delete single comments and in-line comments.
         file_content = re.sub(
                 re.compile('|'.join(language.comment_list)), 
+                "", file_content)
+        
+        # Delete multi line comments and docstrings. This is necessary 
+        # due to restrictions in regex while deleting new line chars.
+        file_content = re.sub(
+                re.compile('|'.join(language.comment_list), re.DOTALL), 
                 "", file_content) 
 
     # Split the file content in lines, using newline char as separator. 
