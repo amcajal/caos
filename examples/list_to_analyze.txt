@@ -1,3 +1,0 @@
-./Calculator.java
-./simple/SimpleCalculator.java
-./simple/simple2
