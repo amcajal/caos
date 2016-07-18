@@ -5,7 +5,7 @@ Project structure:
 - **Source**: folder with the source code files –the application itself.
 - **Examples**: folder containing example files -both input and output -to dive in the app.
 - **Images**: folder containing images to be used in the README.
-- **API**: CAOS Application Programming Interface, generated using [Epydoc](http://epydoc.sourceforge.net/).
+- **API**: CAOS Application Programming Interface, generated using [Epydoc](http://epydoc.sourceforge.net/). [Web Version](https://amcajal.github.io/caos/) available, and html files at 'gh-pages' branch.
 - **LICENSE**: license applicated to this software.
 - **DEVELOPER_NOTES**: TODO list, future improvements, bug tracking or any other developer-side consideration.
 - **README**: You can read it below.
@@ -117,7 +117,7 @@ An example of each of this output files can be found in the [example folder](htt
 
 One question to clarify: 'Apply configuration' operation is not performed just once, but several times during the applications life-cicle. It is represented in that way just to simplify the diagram.
 
-For further information, check the [API](https://github.com/amcajal/caos/tree/master/API), or dive in the source code.
+For further information, check the [API](https://amcajal.github.io/caos/), or dive in the source code.
 
 
 ### How it's built
@@ -127,7 +127,7 @@ For further information, check the [API](https://github.com/amcajal/caos/tree/ma
 - **functions**: contains the core functionality of the application. 'start_analysis' is the main function, from where processes are called -source code file retrieval, apply configuration, text searching, write results and so on-.
 - **programming_language**:  OOP class, representing a programming language (name,        syntax, special cases to be considered and so on). An object of this class contains the information required to process a certain source code in the proper language.
 
-Again, for further information, check the [API](https://github.com/amcajal/caos/tree/master/API).
+Again, for further information, check the [API](https://amcajal.github.io/caos/).
 
 ### How use it
 _NOTE: What follows is just an extended version of the 'help' message obtained when the command `python caos.py -h` is executed._
@@ -189,6 +189,7 @@ Check it to obtain a general overview of the application develop status.
 ### Used tools
 Summary of tools used in this project:
 - [Epydoc](http://epydoc.sourceforge.net/): for API documentation.
+- [Github pages](https://pages.github.com/): for API hosting.
 - [Argparse](https://docs.python.org/2.7/library/argparse.html): for argument parsing.
 - [Draw.io](https://www.draw.io/): for flowchart.
 - [Paint Shop Pro](http://www.paintshoppro.com/en/): for logo design.
